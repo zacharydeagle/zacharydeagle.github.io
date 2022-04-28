@@ -1,0 +1,189 @@
+<html>
+  <head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Deagle</title>
+
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Trirong'/>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Satisfy&display=swap'/>
+
+  </head>
+  <body>
+
+    <main>
+      
+
+      <div class='center'>
+
+        <header class='center__runner' id='nav1'>
+        
+          <a class='item item1' href='#'>Home</a>
+          <a class='item item2' href='#'>About</a>
+          <a class='item item3' href='#'>Projects</a>
+          <a class='item item4' href='#'>Contact Me Now!</a>
+          <div class='center__runner--namespace'>
+          <h1>Zachary Deagle</h1>
+          <p>Network Administrator | Full Stack Developer</p>
+          </div>
+      </header>
+
+        <div class='center__home'>
+          <div class='center__home--text'>
+            {{! position for quotesy text }}
+            <p id='quoteText'>"Only the educated are free"</p>
+            <p id='quoteAuthor'>-Epictetus</p>
+          </div>
+        </div>
+
+        <div class='center__about'>
+          <div class='center__about--text'>
+            <p>
+              My name is Zachary Deagle, and I am a Full-Stack Developer and Network Administrator.
+            </p>
+            <br />
+            <p>
+              Having graduated from a Network Systems Management Diploma Program
+              with Honours, I discovered my love of learning within the tech
+              industry. Since that time, I've taken it upon myself to learn
+              JavaScript, HTML5, CSS, and Node.JS with plans to continue
+              learning PHP, MySQL, and Python.
+            </p>
+            <br />
+            <p>
+              I look forward to hearing from you for your programming and/or
+              network needs.
+            </p>
+          </div>
+          <feature class="center__about--image"></feature>  
+        </div>
+
+        <div class='center__projects'>
+
+          <div class='center__projects--text'>
+            <a href='https://deagle-weather-app.herokuapp.com/'>
+                <img
+                  class='projectSnapshot'
+                  src='img/weatherAppPhoto.PNG'
+                  alt='weather-app'
+                />
+            </a>
+            <p class="projectBody">
+              This weather application is a project I've been working on to
+              improve my RESTful API usage. On it, you can enter any location
+              and it will search the API for the most likely match, then display
+              the forecast information.</p>
+          </div>
+
+          <div class='center__projects--text'>
+            <a href='https://forkify-zd.netlify.app/'>
+              <img
+                class='projectSnapshot'
+                src='img/forkifyAppPhoto.PNG'
+                alt='forkify-app'
+              />
+            </a>
+            <p class="projectBody">
+              This recipe book application utilizes the Forkify API and ES6
+              functionality to provide a customizeable recipe card to the user
+              of whatever they may want to make. This application also has
+              the added function of being able to submit your own recipes, and
+              bookmark the ones you like.
+            </p>
+          </div>
+          
+          <div class='center__projects--text'>
+            <a href='https://nexter-zachdeagle.netlify.app/'>
+              <img
+                class='projectSnapshot'
+                src='img/nexterApp.PNG'
+                alt='nexter-app'
+              />
+            </a>
+            <p class="projectBody">
+              This application utilizes CSS Grid to make an aesthetically pleasing, hypothetical real-estate website featuring a pleasing color pallette and various grid structures.
+            </p>
+          </div>
+          
+          <div class='center__projects--text'>
+            <a href='https://trillo-zachdeagle.netlify.app/'>
+              <img
+                class='projectSnapshot'
+                src='img/trilloApp.PNG'
+                alt='trillo-app'
+              />
+            </a>
+            <p class="projectBody">
+              This application utilizes flexbox to create a hypothetical vacation booking website. This is an example of front-end design practices.
+            </p>
+          </div>
+          
+          <div class='center__projects--text'>
+            <a href='https://natours-zachdeagle.netlify.app/'>
+              <img
+                class='projectSnapshot'
+                src='img/natoursApp.PNG'
+                alt='natours-app'
+              />
+            </a>
+            <p class="projectBody">
+              This application is included to showcase older CSS practices that are currently outdated, showing capability to work with older practices and subsequently update them to the industry standard.
+            </p>
+          </div>
+
+
+        </div>
+
+    <section class='contact-form'>
+      <div class='contact-form__box'>
+
+        <div class='contact-form__text'>
+          <p>Within this contact form I've included the SendGrid API so that you can contact me directly! Please fill out your name, email address and a brief statement of your business and I shall receive and review it promptly! 
+          <br><br>
+          If this does not work for you, you can still contact me directly at zacharydeagle@gmail.com
+          <br><br>
+          Thank you for your time!</p>
+        </div>
+
+        <div class='contact-form__submission'>
+          <input
+            type='text'
+            class='contact-form__submission--name'
+            placeholder="Full Name"
+            id='fullname'
+            required/>
+
+          <input
+            type='email'
+            class='contact-form__submission--email'
+            placeholder="Email Address"
+            id='email'
+            required/>
+
+          <textarea name="body" class="contact-form__submission--body" id="body" cols="30" rows="5" placeholder="Please enter your message here"></textarea>
+
+          <button class='btn'>Send Inquiry</button>
+        </div>
+
+      </div>
+    </section>
+
+      <div class='footer'>
+        <p class='footer__text'>Published 02/2022</p>
+        <p class='footer__text'>Zachary Deagle</p>
+        <p class="footer__version">v2.0.1</p>
+      </div>
+
+
+      </div>
+    
+
+    </main>
+
+
+  </body>
+  <script src='/src/app.js'></script>
+</html>
