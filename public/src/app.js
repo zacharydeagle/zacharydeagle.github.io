@@ -32,7 +32,7 @@ const sendEmail =  function (mail) {
     if(!response.ok) {
       console.log('error in POST');
     } else { 
-
+      console.log('SUCCESS POST');
     }
   })
 };

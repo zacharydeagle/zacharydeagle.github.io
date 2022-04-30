@@ -104,10 +104,16 @@ a {
     row-gap: 2rem;
     color: #fff;
     grid-auto-rows: 30vh;
-    padding: 2rem 2rem; }
+    grid-template-rows: 5vh;
+    padding: 2rem 2rem;
+    justify-items: stretch;
+    text-align: center; }
     @media only screen and (max-width: 56.25em) {
       .center__projects {
         row-gap: 1rem; } }
+    .center__projects--head {
+      border-bottom: 2px solid #333;
+      font-weight: 300; }
     .center__projects--text {
       z-index: 3;
       display: grid;

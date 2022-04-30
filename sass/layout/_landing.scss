@@ -112,13 +112,20 @@
     row-gap: 2rem;
     color:#fff;
     grid-auto-rows: 30vh;
+    grid-template-rows: 5vh;
     padding: 2rem 2rem;
+    justify-items: stretch;
+    text-align: center;
 
     @media only screen and (max-width: 56.25em) {
       row-gap: 1rem;
     }
 
-    
+    &--head {
+      border-bottom: 2px solid #333;
+      font-weight: 300;
+    }
+
     &--text {
       
       z-index: 3;
