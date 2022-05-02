@@ -67,21 +67,29 @@ const selector = function (e) {
 
 btn.addEventListener('click', function(e) {
   e.preventDefault();
-  const nameData = document.querySelector('.contact-form__submission--name').value;
-  const emailData = document.querySelector('.contact-form__submission--email').value;
-  const textData = document.querySelector('.contact-form__submission--body').value;
+  const nameData = document.querySelector('.contact-form__submission--name');
+  const emailData = document.querySelector('.contact-form__submission--email');
+  const textData = document.querySelector('.contact-form__submission--body');
+  const dataArray = [nameData, emailData, textData];
+  const allValid = dataArray.every(input => input.reportValidity());
+
   const sendData = {
-    name : nameData,
-    email : emailData,
-    body : textData
+    name : nameData.value,
+    email : emailData.value,
+    body : textData.value
   };
 
-  if(!nameData || !emailData || !textData) {
-    alert('Please fill out all data fields!')
-  } else {
+  if(allValid) {
     sendEmail(sendData);
     alert('Email sent succesfully! 😊');
   }
+
+  // if(!nameData || !emailData || !textData) {
+  //   alert('Please fill out all data fields!')
+  // } else {
+  //   sendEmail(sendData);
+  //   alert('Email sent succesfully! 😊');
+  // }
 })
 
 runner.forEach((item) => {
