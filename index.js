@@ -34,7 +34,12 @@ app.get('/home', (req, res) => {
 });
 
 getQuote = () => {
-  const newQuote = quote.random();
+  var newQuote = quote.random();
+  
+  if (newQuote == 'Donald Trump') {
+    newQuote = quote.random();
+  }
+  
   return newQuote;
 };
 

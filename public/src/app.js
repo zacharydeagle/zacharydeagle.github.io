@@ -14,8 +14,8 @@ const quoteFunction = function () {
       if (data.error) {
         quoteText.textContent = 'Quotesy Error';
       } else {
-        quoteText.textContent = `"${data.text}"`;
-        quoteAuthor.textContent = `-${data.author}`;
+        quoteText.textContent = `"${data.text}`;
+        quoteAuthor.textContent = `" - ${data.author}`;
       }
     });
   });
