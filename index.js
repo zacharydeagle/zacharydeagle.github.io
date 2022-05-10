@@ -36,7 +36,7 @@ app.get('/home', (req, res) => {
 getQuote = () => {
   var newQuote = quote.random();
   
-  if (newQuote == 'Donald Trump') {
+  if (newQuote.author == 'Donald Trump') {
     newQuote = quote.random();
   }
   
